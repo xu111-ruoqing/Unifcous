@@ -1,0 +1,1682 @@
+[
+  {
+    "id": 1,
+    "name": "中国国际大学生创新大赛（原“互联网+”）",
+    "level": "国家级",
+    "category": "A*",
+    "official_url": "https://cy.ncss.cn",
+    "tags": [
+      "创新创业",
+      "综合"
+    ],
+    "score_rules": [
+      100,
+      93.3,
+      83.3,
+      66.7
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名/校赛：3–5月；省赛：5–6月；国赛总决赛：8月左右",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 2,
+    "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+    "level": "国家级",
+    "category": "A*",
+    "official_url": "https://tiaozhanbei.net",
+    "tags": [
+      "学术科技",
+      "综合"
+    ],
+    "score_rules": [
+      100,
+      93.3,
+      83.3,
+      66.7
+    ],
+    "typical_time_window": "10–次年11月（两年一届）",
+    "timeline_hint": "校赛/院赛：10–12月；省赛：3–5月；国赛：10–11月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 3,
+    "name": "“挑战杯”中国大学生创业计划大赛",
+    "level": "国家级",
+    "category": "A*",
+    "official_url": "https://tiaozhanbei.net",
+    "tags": [
+      "创新创业",
+      "商业"
+    ],
+    "score_rules": [
+      100,
+      93.3,
+      83.3,
+      66.7
+    ],
+    "typical_time_window": "10–次年11月（两年一届）",
+    "timeline_hint": "校赛：10–12月；省赛：3–5月；国赛：10–11月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 4,
+    "name": "全国大学生结构设计竞赛",
+    "level": "国家级",
+    "category": "A",
+    "official_url": "http://structurecontest.com",
+    "tags": [
+      "土木建筑",
+      "工程"
+    ],
+    "score_rules": [
+      83.3,
+      73.3,
+      66.7,
+      56.7
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；分区赛：5–6月；全国总决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 5,
+    "name": "全国周培源大学生力学竞赛",
+    "level": "国家级",
+    "category": "A",
+    "official_url": "https://zpy.cstam.org.cn",
+    "tags": [
+      "力学",
+      "基础学科"
+    ],
+    "score_rules": [
+      83.3,
+      73.3,
+      66.7,
+      56.7
+    ],
+    "typical_time_window": "2–7月",
+    "timeline_hint": "报名：2–3月；初赛/笔试：5月；决赛：6–7月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 6,
+    "name": "全国大学生地质技能竞赛",
+    "level": "国家级",
+    "category": "A",
+    "official_url": "https://zh.cgs.gov.cn",
+    "tags": [
+      "地质",
+      "自然科学"
+    ],
+    "score_rules": [
+      83.3,
+      73.3,
+      66.7,
+      56.7
+    ],
+    "typical_time_window": "4–7月",
+    "timeline_hint": "报名：4–5月；竞赛：6月左右；决赛：7月左右",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 7,
+    "name": "全国大学生水利创新设计大赛",
+    "level": "国家级",
+    "category": "A",
+    "official_url": "https://sljzw.hhu.edu.cn",
+    "tags": [
+      "水利",
+      "工程"
+    ],
+    "score_rules": [
+      83.3,
+      73.3,
+      66.7,
+      56.7
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；提交：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 8,
+    "name": "全国大学生测绘学科创新创业智能大赛",
+    "level": "国家级",
+    "category": "A",
+    "official_url": "https://sgg.whu.edu.cn",
+    "tags": [
+      "测绘",
+      "地理信息"
+    ],
+    "score_rules": [
+      83.3,
+      73.3,
+      66.7,
+      56.7
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；提交：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 9,
+    "name": "全国大学生机器人大赛-RoboMaster、RoboCon",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://robomaster.com; https://cnrobocon.net",
+    "tags": [
+      "机器人",
+      "人工智能"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "10–7月",
+    "timeline_hint": "报名：10–次年2月；区域赛：3–5月；总决赛：6–7月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 10,
+    "name": "“中国软件杯”大学生软件设计大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://cnsoftbei.com",
+    "tags": [
+      "计算机",
+      "软件开发"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；初赛：4–5月；决赛：8月左右",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 11,
+    "name": "中美青年创客大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://chinaus-maker.cscse.edu.cn",
+    "tags": [
+      "创客",
+      "创新"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–5月；分区赛：5–6月；总决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 12,
+    "name": "中国大学生服务外包创新创业大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://fwwb.org.cn",
+    "tags": [
+      "创新创业",
+      "商业"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "10–6月",
+    "timeline_hint": "报名：10–12月；初赛：1–3月；决赛：5–6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 13,
+    "name": "全国大学生数学建模竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://mcm.edu.cn",
+    "tags": [
+      "数学",
+      "建模"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "8–11月",
+    "timeline_hint": "报名：8月；竞赛：9月（一般上旬）；结果/答辩：10–11月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 14,
+    "name": "全国大学生机械创新设计大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://umic.ckcest.cn",
+    "tags": [
+      "机械",
+      "工程"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–10月",
+    "timeline_hint": "报名：3–4月；省赛：5–6月；国赛：9–10月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 15,
+    "name": "全国大学生广告艺术大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://sun-ada.net",
+    "tags": [
+      "艺术",
+      "设计"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "11–8月",
+    "timeline_hint": "报名：11–次年1月；提交：3–4月；省赛：5月；国赛：6–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 16,
+    "name": "全国大学生电子商务“创新、创意及创业”挑战赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://3chuang.net",
+    "tags": [
+      "电子商务",
+      "创新创业"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "11–6月",
+    "timeline_hint": "报名：11–次年1月；校/省赛：3–4月；国赛：5–6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 17,
+    "name": "外研社全国大学生英语系列赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://ucc.fltrp.com",
+    "tags": [
+      "英语",
+      "语言"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "9–12月",
+    "timeline_hint": "校赛：9–10月；省赛：11月；国赛：12月左右",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 18,
+    "name": "“西门子杯”中国智能制造挑战赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://siemenscup-cimc.org.cn",
+    "tags": [
+      "智能制造",
+      "自动化"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "4–8月",
+    "timeline_hint": "报名：4–5月；初赛：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 19,
+    "name": "全国大学生化工设计竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://iche.zju.edu.cn",
+    "tags": [
+      "化工",
+      "工程"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "2–8月",
+    "timeline_hint": "报名：2–3月；提交：4–5月；区域赛：6月；国赛：8月左右",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 20,
+    "name": "全国大学生先进成图技术与产品信息建模创新大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://chengtudasai.com",
+    "tags": [
+      "成图",
+      "建模"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "4–8月",
+    "timeline_hint": "报名：4–5月；初赛：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 21,
+    "name": "全国大学生市场调查与分析大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://china-cssc.org",
+    "tags": [
+      "市场",
+      "分析"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "9–5月",
+    "timeline_hint": "报名：9–10月；校赛：11–12月；省赛：3月；国赛：4–5月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 22,
+    "name": "两岸新锐设计竞赛“华灿奖”",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://huacanjiang.com",
+    "tags": [
+      "设计",
+      "艺术"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "5–11月",
+    "timeline_hint": "报名：5–6月；提交：7–8月；评审/展览：10–11月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 23,
+    "name": "中国高校计算机大赛（C4）",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://c4best.cn",
+    "tags": [
+      "计算机",
+      "IT"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "4–8月",
+    "timeline_hint": "报名：4–6月；初赛：6–7月；决赛：7–8月（视赛道）",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 24,
+    "name": "中国机器人大赛暨RoboCup机器人世界杯中国赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://rcccaa.org",
+    "tags": [
+      "机器人",
+      "人工智能"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "2–5月",
+    "timeline_hint": "报名：2–3月；比赛：4–5月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 25,
+    "name": "全国大学生信息安全竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://ciscn.cn",
+    "tags": [
+      "信息安全",
+      "计算机"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–5月；初赛：5–6月；决赛：8月左右",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 26,
+    "name": "中国大学生机械工程创新创意大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "http://meicc.cmes.org/datacenter",
+    "tags": [
+      "机械",
+      "工程"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；初赛：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 27,
+    "name": "蓝桥杯全国软件和信息技术专业人才大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://dasai.lanqiao.cn",
+    "tags": [
+      "计算机",
+      "编程"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "11–6月",
+    "timeline_hint": "报名：11–次年2月；省赛：4月；国赛：5–6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 28,
+    "name": "全国大学生金相技能大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://jxds.tech",
+    "tags": [
+      "材料",
+      "技能"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–7月",
+    "timeline_hint": "报名：3–4月；分区赛：5月；国赛：6–7月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 29,
+    "name": "米兰设计周——中国高校设计学科师生优秀作品展",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://milan-aap.org.cn",
+    "tags": [
+      "设计",
+      "艺术"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "11–6月",
+    "timeline_hint": "报名/征集：11–3月；评审：4–5月；展览：5–6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 30,
+    "name": "全国大学生智能汽车竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://smartcar.zone",
+    "tags": [
+      "智能汽车",
+      "工程"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "10–8月",
+    "timeline_hint": "报名：10–12月；分区赛：3–4月；国赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 31,
+    "name": "全国大学生物流设计大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://clpp.org.cn",
+    "tags": [
+      "物流",
+      "管理"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "10–5月",
+    "timeline_hint": "报名：10–12月；初赛：1–3月；决赛：5月左右",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 32,
+    "name": "中国大学生计算机设计大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://jsjds.blcu.edu.cn",
+    "tags": [
+      "计算机",
+      "设计"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "1–8月",
+    "timeline_hint": "报名：1–3月；省赛：4–5月；国赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 33,
+    "name": "全国大学生光电设计竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://opt.zju.edu.cn",
+    "tags": [
+      "光电",
+      "物理"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；初赛：5月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 34,
+    "name": "全国大学生节能减排社会实践与科技竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://jienengjianpai.org",
+    "tags": [
+      "节能减排",
+      "环保"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "4–8月",
+    "timeline_hint": "报名：4–5月；提交：6月；决赛：8月左右",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 35,
+    "name": "全国大学生电子设计竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://nuedc.xjtu.edu.cn",
+    "tags": [
+      "电子",
+      "工程"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "4–9月（两年一届）",
+    "timeline_hint": "报名/备赛：4–7月；竞赛：8月；结果：9月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 36,
+    "name": "全国大学生物理实验竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://wlsycx.moocollege.com/home/homepage",
+    "tags": [
+      "物理",
+      "实验"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；提交：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 37,
+    "name": "中国大学生工程实践与创新能力大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://gcxl.edu.cn",
+    "tags": [
+      "工程",
+      "创新"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；初赛：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 38,
+    "name": "未来设计师·全国高校数字艺术设计大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://ncda.org.cn",
+    "tags": [
+      "设计",
+      "数字艺术"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "1–8月",
+    "timeline_hint": "报名：1–3月；提交：4–5月；决赛：6–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 39,
+    "name": "全国大学生集成电路创新创业大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://univ.ciciec.com",
+    "tags": [
+      "集成电路",
+      "电子"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "12–7月",
+    "timeline_hint": "报名：12–2月；初赛：3–4月；决赛：6–7月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 40,
+    "name": "全国大学生创新创业训练计划年会展示",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://gjcxcy.bjtu.edu.cn",
+    "tags": [
+      "创新创业",
+      "综合"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "5–11月",
+    "timeline_hint": "校内遴选：5–6月；年会/展示：9–11月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 41,
+    "name": "ACM-ICPC国际大学生程序设计竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://icpc.global; https://ccpc.io",
+    "tags": [
+      "计算机",
+      "算法"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "9–次年4月",
+    "timeline_hint": "区域赛：9–12月；（世界级）决赛多在次年2–4月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 42,
+    "name": "全国职业院校技能大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://chinaskills-jsw.org",
+    "tags": [
+      "职业技能",
+      "综合"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "1–6月",
+    "timeline_hint": "省赛：1–3月；国赛：5–6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 43,
+    "name": "世界技能大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://worldskills.org",
+    "tags": [
+      "职业技能",
+      "综合"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "滚动（两年一届）",
+    "timeline_hint": "选拔赛/集训：全年滚动；关键赛段多在春夏/秋季",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 44,
+    "name": "世界技能大赛中国选拔赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "http://worldskillschina.mohrss.gov.cn/",
+    "tags": [
+      "职业技能",
+      "综合"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "滚动（两年一届）",
+    "timeline_hint": "国内选拔：春夏为主；具体以当年通知",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 45,
+    "name": "中国机器人及人工智能大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://craic.yuntop.com/#/index",
+    "tags": [
+      "机器人",
+      "人工智能"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；初赛：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 46,
+    "name": "全国高校商业精英挑战赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://cubec.org.cn",
+    "tags": [
+      "商业",
+      "管理"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "1–8月",
+    "timeline_hint": "报名：1–3月；省赛：4–5月；国赛：6–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 47,
+    "name": "中国好创意暨全国数字艺术设计大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://cdec.org.cn",
+    "tags": [
+      "艺术",
+      "数字设计"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "1–8月",
+    "timeline_hint": "报名：1–3月；提交：4–5月；国赛：6–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 48,
+    "name": "全国三维数字化创新设计大赛 (3D大赛)",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://3dds.3ddl.net",
+    "tags": [
+      "设计",
+      "数字化"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；提交：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 49,
+    "name": "“学创杯”全国大学生创业综合模拟大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://xcbds.com",
+    "tags": [
+      "创业",
+      "模拟"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "2–6月",
+    "timeline_hint": "报名：2–3月；初赛：4月；决赛：5–6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 50,
+    "name": "“大唐杯”全国大学生新一代信息通信技术大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://dtcup.dtlab.cn",
+    "tags": [
+      "通信",
+      "技术"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "12–6月",
+    "timeline_hint": "报名：12–2月；省赛：3–4月；国赛：5–6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 51,
+    "name": "全国高校BIM毕业设计创新大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://bim.glodonedu.com",
+    "tags": [
+      "BIM",
+      "建筑"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "11–6月",
+    "timeline_hint": "报名：11–12月；提交：3–4月；决赛：5–6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 52,
+    "name": "睿抗机器人开发者大赛(RAICOM)",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://raicom.com.cn",
+    "tags": [
+      "机器人",
+      "开发"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；初赛：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 53,
+    "name": "全国大学生生命科学竞赛(CULSC)",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://culsc.cn",
+    "tags": [
+      "生命科学",
+      "生物"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；提交：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 54,
+    "name": "华为ICT大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://e.huawei.com/cn/talent",
+    "tags": [
+      "ICT",
+      "通信"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "9–次年5月",
+    "timeline_hint": "报名：9–10月；国赛：11–12月；区域/全球：1–5月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 55,
+    "name": "全国大学生嵌入式芯片与系统设计竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://nuedc-z.cll.cn",
+    "tags": [
+      "嵌入式",
+      "电子"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；初赛：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 56,
+    "name": "中国高校智能机器人创意大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://robot.cces.net.cn",
+    "tags": [
+      "机器人",
+      "创意"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–7月",
+    "timeline_hint": "报名：3–4月；初赛：5月；决赛：6–7月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 57,
+    "name": "全国大学生数字媒体科技作品及创意竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://dmt.caai.cn",
+    "tags": [
+      "数字媒体",
+      "创意"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；提交：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 58,
+    "name": "iCAN大学生创新创业大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://g-ican.com",
+    "tags": [
+      "创新创业",
+      "科技"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "4–10月",
+    "timeline_hint": "报名：4–6月；区域赛：7–8月；国赛：9–10月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 59,
+    "name": "“外教社杯”全国高校学生跨文化能力大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://sflep.com",
+    "tags": [
+      "外语",
+      "文化"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "10–12月",
+    "timeline_hint": "校赛：10月；省赛：11月；国赛：12月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 60,
+    "name": "全国大学生物联网设计竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://iot.sjtu.edu.cn",
+    "tags": [
+      "物联网",
+      "工程"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；初赛：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 61,
+    "name": "“21世纪杯”全国英语演讲比赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://contest.i21st.cn",
+    "tags": [
+      "英语",
+      "演讲"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–11月",
+    "timeline_hint": "报名：3–4月；省区赛：5–6月；全国赛：10–11月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 62,
+    "name": "全国数字建筑创新应用大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://p.glodonedu.com",
+    "tags": [
+      "数字建筑",
+      "创新"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；初赛：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 63,
+    "name": "全国大学生化学实验创新设计竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://cid.nju.edu.cn",
+    "tags": [
+      "化学",
+      "实验"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；提交：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 64,
+    "name": "中国大学生医学技术技能大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "",
+    "tags": [
+      "医学",
+      "技能"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–7月",
+    "timeline_hint": "报名：3–4月；省赛：5月；国赛：6–7月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 65,
+    "name": "“工行杯”全国大学生金融科技创新大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://finance.tech.icbc.com.cn",
+    "tags": [
+      "金融",
+      "科技"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "4–9月",
+    "timeline_hint": "报名：4–5月；初赛：6–7月；决赛：8–9月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 66,
+    "name": "中华经典诵写讲大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://jingdiansxj.cn",
+    "tags": [
+      "文学",
+      "传统文化"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "4–9月",
+    "timeline_hint": "报名：4–5月；省赛：6–7月；国赛：8–9月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 67,
+    "name": "百度之星 程序设计大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://star.baidu.com",
+    "tags": [
+      "计算机",
+      "编程"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "4–8月",
+    "timeline_hint": "报名：4–5月；初赛：5–6月；半决赛：7月；决赛：8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 68,
+    "name": "全国大学生工业设计大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://cuidc.net",
+    "tags": [
+      "工业设计",
+      "工程"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–10月",
+    "timeline_hint": "报名：3–4月；提交：5–6月；决赛/展评：9–10月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 69,
+    "name": "全国大学生化工实验大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "http://edu.cteic.com/match/app/main",
+    "tags": [
+      "化工",
+      "实验"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–7月",
+    "timeline_hint": "报名：3–4月；初赛：5月；决赛：6–7月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 70,
+    "name": "全国大学生计算机系统能力大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://sys.educg.net",
+    "tags": [
+      "计算机",
+      "系统"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；初赛：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 71,
+    "name": "全国大学生花园设计建造竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "http://www.lalavision.com/hysjjzjs",
+    "tags": [
+      "设计",
+      "建筑"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–6月",
+    "timeline_hint": "报名：3–4月；决赛/搭建：5–6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 72,
+    "name": "全国大学生信息安全与对抗技术竞赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://iscc.org.cn",
+    "tags": [
+      "信息安全",
+      "技术"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–5月；初赛：5–6月；决赛：8月左右",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 73,
+    "name": "全国大学生统计建模大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://tjjmds.ai-learning.net",
+    "tags": [
+      "统计",
+      "建模"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；提交：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 74,
+    "name": "全国大学生能源经济学术创意大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://energy.cipcu.edu.cn",
+    "tags": [
+      "能源",
+      "经济"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "4–8月",
+    "timeline_hint": "报名：4–5月；提交：6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 75,
+    "name": "全国大学生基础医学创新研究暨实验设计论坛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "http://www.jcyxds.com/",
+    "tags": [
+      "医学",
+      "研究"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；提交：5月；论坛/决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 76,
+    "name": "全国本科院校税收风险管控案例大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://ssfkds.moocollege.com/home/homepage",
+    "tags": [
+      "税收",
+      "管理"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–7月",
+    "timeline_hint": "报名：3–4月；初赛：5月；决赛：6–7月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 77,
+    "name": "全国企业竞争模拟大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://ibizsim.cn",
+    "tags": [
+      "商业",
+      "模拟"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "2–6月",
+    "timeline_hint": "报名：2–3月；初赛：4月；决赛：5–6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 78,
+    "name": "全国高等院校数智化企业经营沙盘大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://seentao.com",
+    "tags": [
+      "商业",
+      "经营"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–7月",
+    "timeline_hint": "报名：3–4月；初赛：5月；决赛：6–7月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 79,
+    "name": "全球校园人工智能算法精英大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://digix.huawei.com",
+    "tags": [
+      "人工智能",
+      "算法"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "2–8月",
+    "timeline_hint": "报名：2–5月；线上赛：5–6月；总决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 80,
+    "name": "国际大学生智能农业装备创新大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://uiaec.ujs.edu.cn",
+    "tags": [
+      "农业",
+      "智能装备"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–8月",
+    "timeline_hint": "报名：3–4月；初赛：5–6月；决赛：7–8月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 81,
+    "name": "“科云杯”全国大学生财会职业能力大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://keyun.91caijiao.com",
+    "tags": [
+      "财会",
+      "职业"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–6月",
+    "timeline_hint": "报名：3–4月；初赛：5月；决赛：6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 82,
+    "name": "全国大学生机器人大赛-RoboTac",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://robotac.cn",
+    "tags": [
+      "机器人",
+      "工程"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–7月",
+    "timeline_hint": "报名：3–4月；初赛：5月；决赛：6–7月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 83,
+    "name": "一带一路暨金砖国家技能发展与技术创新大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://brskills.com",
+    "tags": [
+      "技能",
+      "创新"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "3–10月",
+    "timeline_hint": "报名：3–5月；分赛项：6–8月；总决赛：9–10月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  },
+  {
+    "id": 84,
+    "name": "码蹄杯全国职业院校程序设计大赛",
+    "level": "国家级",
+    "category": "B",
+    "official_url": "https://mati.cn",
+    "tags": [
+      "程序设计",
+      "技能"
+    ],
+    "score_rules": [
+      66.7,
+      56.7,
+      50,
+      40
+    ],
+    "typical_time_window": "1–6月",
+    "timeline_hint": "报名：1–3月；初赛：4–5月；决赛：6月",
+    "note": "时间为经验区间，具体以当年官网/学校通知为准"
+  }
+]

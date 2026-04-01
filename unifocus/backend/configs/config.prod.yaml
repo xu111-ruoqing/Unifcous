@@ -1,0 +1,76 @@
+server:
+  host: 0.0.0.0
+  port: 8080
+  mode: release
+  read_timeout: 60
+  write_timeout: 60
+
+database:
+  host: 127.0.0.1
+  port: 5432
+  user: unifocus
+  password: change-me-in-production
+  dbname: unifocus
+  sslmode: require
+  max_open_conns: 100
+  max_idle_conns: 10
+  conn_max_lifetime: 300
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password: change-me-in-production
+  db: 0
+  pool_size: 50
+
+jwt:
+  secret: CHANGE_ME_TO_A_STRONG_SECRET_WITH_32_CHARS_MINIMUM
+  expire_hours: 168
+
+crawler:
+  worker_count: 20
+  request_timeout: 30
+  user_agents:
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+    - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+  rate_limit:
+    requests_per_second: 5
+    burst: 10
+
+nlp_service:
+  url: http://127.0.0.1:8000
+  timeout: 60
+
+log:
+  level: info
+  output: file
+  file_path: /var/log/unifocus/app.log
+  max_size: 200
+  max_backups: 10
+  max_age: 90
+
+bootstrap:
+  seed_competitions_on_start: false
+
+cors:
+  allowed_origins:
+    - https://unifocus.example.com
+  allow_credentials: true
+  allowed_headers:
+    - Content-Type
+    - Content-Length
+    - Accept-Encoding
+    - X-CSRF-Token
+    - Authorization
+    - Accept
+    - Origin
+    - Cache-Control
+    - X-Requested-With
+  allowed_methods:
+    - GET
+    - POST
+    - PUT
+    - PATCH
+    - DELETE
+    - OPTIONS

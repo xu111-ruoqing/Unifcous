@@ -1,0 +1,54 @@
+# ===== 敏感配置（绝不上传）=====
+.env
+.env.local
+.env.*.local
+unifocus/backend/.env
+
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ===== Python =====
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# ===== Node / Next.js =====
+node_modules/
+.next/
+.next-dev-*/
+.next-build-*/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== Go 编译产物 =====
+unifocus/backend/api
+
+# ===== IDE =====
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ===== 大文件 / 临时文件 =====
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.zip
+*.tar.gz
+unifocus/web/2026-*.txt
+
+# ===== Claude 内部文件 =====
+.claude/
+.superpowers/
