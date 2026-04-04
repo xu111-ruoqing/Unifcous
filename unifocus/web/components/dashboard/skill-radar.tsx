@@ -55,16 +55,17 @@ export function SkillRadar({ data, className }: { data: RadarDimension[]; classN
       className={cn("hud-enter-right absolute bottom-6 right-6 w-[260px]", className)}
       style={{
         borderRadius: "12px",
-        border: "1px solid rgba(108,92,231,0.28)",
-        background: "linear-gradient(135deg, rgba(4,11,24,0.84) 0%, rgba(10,8,34,0.80) 100%)",
-        backdropFilter: "blur(18px) saturate(1.5)",
-        boxShadow: "0 0 28px 3px rgba(108,92,231,0.14), inset 0 1px 0 rgba(255,255,255,0.05)",
+        border: "1px solid rgba(108,92,231,0.25)",
+        // 与主面板保持一致的深空渐变和玻璃态参数
+        background: "linear-gradient(135deg, rgba(4,11,24,0.82) 0%, rgba(8,18,40,0.78) 100%)",
+        backdropFilter: "blur(16px) saturate(1.4)",
+        boxShadow: "0 0 24px 2px rgba(108,92,231,0.18), inset 0 1px 0 rgba(255,255,255,0.05)",
       }}
     >
       {/* Top scan line */}
       <div
         className="rounded-t-[11px]"
-        style={{ height: "2px", background: "linear-gradient(90deg, transparent, #6c5ce7cc, #a855f7cc, transparent)" }}
+        style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(108,92,231,0.8), rgba(168,85,247,0.8), transparent)" }}
       />
 
       {/* Header */}
@@ -84,9 +85,9 @@ export function SkillRadar({ data, className }: { data: RadarDimension[]; classN
             <span
               className="rounded-md px-1.5 py-0.5 font-mono text-[8px] font-semibold"
               style={{
-                background: "rgba(168,85,247,0.18)",
+                background: "rgba(168,85,247,0.15)",
                 color: "#c084fc",
-                border: "1px solid rgba(168,85,247,0.3)",
+                border: "1px solid rgba(168,85,247,0.25)",
               }}
             >
               ⬆ {gap.subject}
@@ -107,10 +108,11 @@ export function SkillRadar({ data, className }: { data: RadarDimension[]; classN
         <div className="px-1 pb-3">
           <ResponsiveContainer width="100%" height={178}>
             <RadarChart data={data} margin={{ top: 8, right: 20, bottom: 4, left: 20 }}>
-              <PolarGrid stroke="rgba(108,92,231,0.18)" />
+              {/* 增强网格线的深空质感 */}
+              <PolarGrid stroke="rgba(108,92,231,0.25)" />
               <PolarAngleAxis
                 dataKey="subject"
-                tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 8.5, fontFamily: "JetBrains Mono, monospace" }}
+                tick={{ fill: "rgba(255,255,255,0.55)", fontSize: 8.5, fontFamily: "JetBrains Mono, monospace" }}
               />
               {/* Opportunity requirement — violet dashed outline */}
               <Radar
@@ -118,9 +120,9 @@ export function SkillRadar({ data, className }: { data: RadarDimension[]; classN
                 dataKey="required"
                 stroke="#a855f7"
                 fill="#a855f7"
-                fillOpacity={0.08}
+                fillOpacity={0.12}
                 strokeDasharray="3 2"
-                strokeWidth={1.2}
+                strokeWidth={1.5}
                 dot={false}
               />
               {/* Current ability — indigo solid fill */}
@@ -129,8 +131,8 @@ export function SkillRadar({ data, className }: { data: RadarDimension[]; classN
                 dataKey="current"
                 stroke="#6c5ce7"
                 fill="#6c5ce7"
-                fillOpacity={0.28}
-                strokeWidth={1.5}
+                fillOpacity={0.35}
+                strokeWidth={1.8}
                 dot={{ r: 2.5, fill: "#6c5ce7", strokeWidth: 0 }}
               />
             </RadarChart>
@@ -138,12 +140,12 @@ export function SkillRadar({ data, className }: { data: RadarDimension[]; classN
 
           {/* Legend row */}
           <div className="flex items-center justify-center gap-4 pb-1 pt-0.5">
-            <span className="flex items-center gap-1.5 font-mono text-[8.5px] text-white/35">
-              <span className="inline-block h-px w-5 border-t border-dashed border-violet-500/70" />
+            <span className="flex items-center gap-1.5 font-mono text-[8.5px] text-white/40">
+              <span className="inline-block h-px w-5 border-t border-dashed border-violet-400" />
               机会要求
             </span>
-            <span className="flex items-center gap-1.5 font-mono text-[8.5px] text-white/35">
-              <span className="inline-block h-px w-5 bg-indigo-500/80" />
+            <span className="flex items-center gap-1.5 font-mono text-[8.5px] text-white/40">
+              <span className="inline-block h-px w-5 bg-indigo-400" />
               当前能力
             </span>
           </div>

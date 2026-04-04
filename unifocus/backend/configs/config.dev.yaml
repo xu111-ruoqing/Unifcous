@@ -8,7 +8,7 @@ server:
 database:
   host: 127.0.0.1
   port: 5432
-  user: yufan
+  user: unifocus
   password: unifocus_dev_password
   dbname: unifocus_dev
   sslmode: disable

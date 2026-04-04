@@ -20,14 +20,17 @@ export function OverloadWarningPanel({ warnings, className }: OverloadWarningPan
       style={{
         borderRadius: "12px",
         border: "1px solid rgba(251,191,36,0.25)",
-        background: "linear-gradient(135deg, rgba(12,8,0,0.88) 0%, rgba(24,14,2,0.84) 100%)",
-        backdropFilter: "blur(16px) saturate(1.3)",
+        // 保持深空暗色调的基础上，匹配主面板的背景参数
+        background: "linear-gradient(135deg, rgba(12,8,0,0.82) 0%, rgba(24,14,2,0.78) 100%)",
+        backdropFilter: "blur(16px) saturate(1.4)",
+        // 补充缺失的泛光层，实现光学辉光对齐
+        boxShadow: "0 0 24px 2px rgba(251,191,36,0.15), inset 0 1px 0 rgba(255,255,255,0.05)",
       }}
     >
       {/* Amber scan line */}
       <div
         className="rounded-t-[11px]"
-        style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(251,191,36,0.7), transparent)" }}
+        style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(251,191,36,0.85), transparent)" }}
       />
 
       {/* Header */}
@@ -37,7 +40,7 @@ export function OverloadWarningPanel({ warnings, className }: OverloadWarningPan
           <div className="relative mt-0.5 shrink-0">
             <div
               className="dot-pulse h-2 w-2 rounded-full"
-              style={{ background: "#fbbf24", boxShadow: "0 0 8px 2px rgba(251,191,36,0.5)" }}
+              style={{ background: "#fbbf24", boxShadow: "0 0 8px 2px rgba(251,191,36,0.6)" }}
             />
           </div>
           <div>
@@ -65,20 +68,20 @@ export function OverloadWarningPanel({ warnings, className }: OverloadWarningPan
             key={w.month}
             className="rounded-[8px] px-3 py-2"
             style={{
-              background: "rgba(251,191,36,0.07)",
-              border: "1px solid rgba(251,191,36,0.12)",
+              background: "rgba(251,191,36,0.08)",
+              border: "1px solid rgba(251,191,36,0.15)",
             }}
           >
             <div className="flex items-center justify-between">
               <span className="font-mono text-[9.5px] font-semibold text-amber-300">{w.month}</span>
               <span
                 className="rounded-full px-1.5 py-0.5 font-mono text-[8px] font-semibold"
-                style={{ background: "rgba(251,191,36,0.15)", color: "#fcd34d" }}
+                style={{ background: "rgba(251,191,36,0.18)", color: "#fcd34d" }}
               >
                 {w.count} 项
               </span>
             </div>
-            <div className="mt-1 font-body text-[10px] leading-relaxed text-amber-100/50">
+            <div className="mt-1 font-body text-[10px] leading-relaxed text-amber-100/55">
               {w.items.slice(0, 2).join("、")}
               {w.count > 2 ? ` 等 ${w.count} 项` : ""}
             </div>
@@ -88,9 +91,9 @@ export function OverloadWarningPanel({ warnings, className }: OverloadWarningPan
         {/* Divider + advice */}
         <div
           className="my-1"
-          style={{ height: "1px", background: "rgba(251,191,36,0.12)" }}
+          style={{ height: "1px", background: "rgba(251,191,36,0.15)" }}
         />
-        <p className="font-mono text-[8.5px] leading-relaxed text-amber-400/40">
+        <p className="font-mono text-[8.5px] leading-relaxed text-amber-400/45">
           机会密集，建议适当减项或错峰规划。
         </p>
       </div>
