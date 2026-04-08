@@ -93,6 +93,7 @@ func main() {
 	authService := service.NewAuthService(userRepo, jwtMgr)
 	recService := service.NewRecognitionService(recRepo)
 	oppService := service.NewOpportunityService(oppRepo, recService)
+	scoringService := service.NewScoringService()
 
 	nlpClient := client.NewNLPClient(&cfg.NLPService)
 	profileService := service.NewProfileService(profileRepo, nlpClient)
@@ -100,7 +101,7 @@ func main() {
 	crawlerService := service.NewCrawlerService(crawlTaskRepo, scheduler)
 
 	// 创建路由（传入数据库和Redis实例供后续使用）
-	router := setupRouter(cfg, db, rdb, authService, oppService, profileService, crawlerService, competitionRepo)
+	router := setupRouter(cfg, db, rdb, authService, oppService, profileService, crawlerService, competitionRepo, scoringService, oppRepo, userRepo, profileRepo)
 
 	// 创建HTTP服务器
 	srv := &http.Server{
@@ -138,7 +139,7 @@ func main() {
 }
 
 // setupRouter 设置路由
-func setupRouter(cfg *config.Config, db *postgres.DB, rdb *redis.Client, authService *service.AuthService, oppService *service.OpportunityService, profileService *service.ProfileService, crawlerService service.CrawlerService, competitionRepo *postgres.CompetitionRepository) *gin.Engine {
+func setupRouter(cfg *config.Config, db *postgres.DB, rdb *redis.Client, authService *service.AuthService, oppService *service.OpportunityService, profileService *service.ProfileService, crawlerService service.CrawlerService, competitionRepo *postgres.CompetitionRepository, scoringService *service.ScoringService, oppRepo *postgres.OpportunityRepository, userRepo *postgres.UserRepository, profileRepo *postgres.ProfileRepository) *gin.Engine {
 	router := gin.New()
 
 	// 中间件
@@ -154,6 +155,7 @@ func setupRouter(cfg *config.Config, db *postgres.DB, rdb *redis.Client, authSer
 	metricsHandler := handlers.NewMetricsHandler()
 	crawlTaskHandler := handlers.NewCrawlTaskHandler(crawlerService)
 	competitionHandler := handlers.NewCompetitionHandler(competitionRepo)
+	scoringHandler := handlers.NewScoringHandler(scoringService, oppRepo, userRepo, profileRepo)
 
 	// 健康检查
 	router.GET("/health", func(c *gin.Context) {
@@ -206,6 +208,8 @@ func setupRouter(cfg *config.Config, db *postgres.DB, rdb *redis.Client, authSer
 		// 公开的机会查询路由（无需认证）
 		v1.GET("/opportunities", oppHandler.List)
 		v1.GET("/opportunities/:id", oppHandler.GetByID)
+		v1.GET("/opportunities/:id/score", scoringHandler.ScoreOpportunity)
+		v1.GET("/opportunities/scored", scoringHandler.ScoreList)
 
 		// 竞赛管理（无需认证）
 		v1.GET("/competitions", competitionHandler.List)
