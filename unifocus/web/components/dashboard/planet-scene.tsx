@@ -333,7 +333,19 @@ function createSatellites(
         color, emissive: color, emissiveIntensity: baseEmissive, roughness: 0.25, metalness: 0.8
       })
     );
-    mesh.userData = { title: item.title, context: item.context, groupKey, baseEmissive, url: item.url };
+    mesh.userData = {
+      title: item.title,
+      context: item.context,
+      groupKey,
+      baseEmissive,
+      url: item.url,
+      window: item.window,
+      score: item.score,
+      passed: item.passed,
+      gateReason: item.gateReason,
+      daysUntilDeadline: item.daysUntilDeadline,
+      scoreComponents: item.scoreComponents,
+    };
 
     // 生成专属简称文字广告牌（Billboard Label）
     // 降级保护：如果数据层异常没有抽出 shortName，使用原 title 截断
@@ -365,6 +377,12 @@ export interface ActiveNode {
   context: string;
   groupKey: string;
   url?: string;
+  window?: string;
+  score?: number;
+  passed?: boolean;
+  gateReason?: string;
+  daysUntilDeadline?: number;
+  scoreComponents?: OrbitItem["scoreComponents"];
 }
 
 export interface PlanetSceneProps {

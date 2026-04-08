@@ -23,6 +23,31 @@ export interface Opportunity {
   created_at: string;
 }
 
+export interface OpportunityScoreComponents {
+  time_feasibility: number;
+  reward: number;
+  location_pref: number;
+  prep_cost: number;
+  logit_raw: number;
+}
+
+export interface OpportunityScoreResult {
+  score: number;
+  passed: boolean;
+  components: OpportunityScoreComponents;
+  explanation?: {
+    model?: string;
+    gate_passed?: boolean;
+    gate_reason?: string;
+    days_until_deadline?: number;
+    weights?: Record<string, number>;
+  };
+}
+
+export interface ScoredOpportunity extends Opportunity {
+  score_result?: OpportunityScoreResult;
+}
+
 export interface OpportunityFilter {
   type?: string;
   competition_level?: string;
@@ -37,6 +62,13 @@ export interface OpportunityFilter {
 
 export interface OpportunityListResponse {
   data: Opportunity[];
+  total: number;
+  limit: number;
+  offset: number;
+}
+
+export interface ScoredOpportunityListResponse {
+  data: ScoredOpportunity[];
   total: number;
   limit: number;
   offset: number;
@@ -69,6 +101,34 @@ export const opportunitiesAPI = {
   // 获取机会详情
   getById: async (id: number): Promise<Opportunity> => {
     const response = await apiClient.get(`/api/v1/opportunities/${id}`);
+    return response.data;
+  },
+
+  // 获取带评分的机会列表
+  listScored: async (
+    filter?: OpportunityFilter,
+    userId?: number
+  ): Promise<ScoredOpportunityListResponse> => {
+    const response = await apiClient.get("/api/v1/opportunities/scored", {
+      params: {
+        ...filter,
+        ...(userId ? { user_id: userId } : {}),
+      },
+    });
+    return {
+      ...response.data,
+      data: arrayOrEmpty(response.data?.data),
+    };
+  },
+
+  // 获取单个机会评分
+  getScoreById: async (
+    id: number,
+    userId?: number
+  ): Promise<{ opportunity_id: number; score_result?: OpportunityScoreResult }> => {
+    const response = await apiClient.get(`/api/v1/opportunities/${id}/score`, {
+      params: userId ? { user_id: userId } : undefined,
+    });
     return response.data;
   },
 

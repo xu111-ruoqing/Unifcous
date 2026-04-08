@@ -1,4 +1,5 @@
 // Planet data layer — ported and enhanced from web-vite/src/lib/opportunityData.js
+import type { OpportunityScoreResult } from "@/lib/api/opportunities";
 import { arrayOrEmpty } from "@/lib/utils";
 
 export interface OrbitItem {
@@ -7,6 +8,11 @@ export interface OrbitItem {
   accent: "gold" | "cyan" | "violet";
   context: string;
   window?: string;
+  score?: number;
+  passed?: boolean;
+  gateReason?: string;
+  daysUntilDeadline?: number;
+  scoreComponents?: OpportunityScoreResult["components"];
   /** 0-1: engagement weight based on view_count + save_count */
   weight: number;
   /** 0-1: time proximity (1 = deadline very soon, 0 = far away or no deadline) */
@@ -157,6 +163,7 @@ export interface RawOpportunity {
   save_count?: number;
   tags?: string[];
   source_url?: string;
+  score_result?: OpportunityScoreResult;
 }
 
 export function buildOrbitGroups({
@@ -189,13 +196,20 @@ export function buildOrbitGroups({
 
   safeOpportunities.slice(0, 30).forEach((item) => {
     const group = inferGroup(item);
-    const rawWeight = (item.view_count ?? 0) + (item.save_count ?? 0);
+    const scoreResult = item.score_result;
+    const score = scoreResult?.score;
+    const rawWeight = score != null ? score : (item.view_count ?? 0) + (item.save_count ?? 0);
     byGroup[group].push({
       title: compact(item.title, "未命名机会"),
       shortName: extractShortName(item.title, item.tags),
       accent: ORBIT_CONFIG[group].tone,
       context: compact(item.organizer ?? item.type, "机会信号待确认"),
       window: compact(item.deadline ?? item.start_date, "开放中"),
+      score,
+      passed: scoreResult?.passed,
+      gateReason: scoreResult?.explanation?.gate_reason,
+      daysUntilDeadline: scoreResult?.explanation?.days_until_deadline,
+      scoreComponents: scoreResult?.components,
       rawWeight,
       timeProximity: computeTimeProximity(item.deadline),
       url: item.source_url, 

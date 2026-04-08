@@ -5,6 +5,9 @@
 # -------------------- 开发环境 --------------------
 FROM golang:1.25-alpine AS development
 
+ARG GOPROXY=https://goproxy.cn,direct
+ENV GOPROXY=${GOPROXY}
+
 # 安装必要工具
 RUN apk add --no-cache git make gcc musl-dev
 
@@ -27,6 +30,9 @@ CMD ["go", "run", "cmd/api/main.go"]
 
 # -------------------- 构建阶段 --------------------
 FROM golang:1.25-alpine AS builder
+
+ARG GOPROXY=https://goproxy.cn,direct
+ENV GOPROXY=${GOPROXY}
 
 WORKDIR /app
 

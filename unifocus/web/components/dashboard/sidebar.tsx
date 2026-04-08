@@ -23,7 +23,7 @@ interface SidebarItemConfig {
 const navItems = [
   { href: "/dashboard", label: "机会总览", icon: LayoutDashboard },
   { href: "/dashboard/competitions", label: "竞赛管理", icon: Trophy },
-  { href: "/dashboard/opportunities", label: "机会列表", icon: List, disabled: true },
+  { href: "/dashboard/opportunities", label: "机会列表", icon: List },
   { href: "/dashboard/profile", label: "用户画像", icon: User, disabled: true },
   { href: "/dashboard/resume", label: "简历上传", icon: FileUp, disabled: true },
 ] satisfies SidebarItemConfig[];

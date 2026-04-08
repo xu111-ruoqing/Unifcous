@@ -7,7 +7,7 @@ import { SkillRadar, buildRadarData } from "./skill-radar";
 import { OverloadWarningPanel } from "./overload-warning";
 import { competitionsAPI, type Competition } from "@/lib/api/competitions";
 import { opportunitiesAPI } from "@/lib/api/opportunities";
-import { profileAPI } from "@/lib/api/profile";
+import { profileAPI, type UserProfile } from "@/lib/api/profile";
 import { arrayOrEmpty } from "@/lib/utils";
 import {
   buildOrbitGroups,
@@ -25,33 +25,46 @@ const DEFAULT_NODE: ActiveNode = {
 export default function PlanetClient() {
   const [competitions, setCompetitions] = useState<Competition[]>([]);
   const [opportunities, setOpportunities] = useState<RawOpportunity[]>([]);
-  const [profile, setProfile] = useState<{
-    skills: string[];
-    certificates: Array<{ name: string; score?: number }>;
-  } | null>(null);
+  const [profile, setProfile] = useState<UserProfile | null>(null);
   const [activeNode, setActiveNode] = useState<ActiveNode>(DEFAULT_NODE);
 
   // Fetch data
   useEffect(() => {
     let mounted = true;
 
-    opportunitiesAPI.list({ limit: 50 })
-      .then((res) => { if (mounted) setOpportunities(res.data); })
-      .catch(() => {});
+    const fetchProfileAndOpportunities = async () => {
+      let resolvedProfile: UserProfile | null = null;
 
-    profileAPI.getProfile()
-      .then((d) => {
-        if (!mounted) return;
-        setProfile(
-          d
-            ? {
-                skills: arrayOrEmpty(d.skills),
-                certificates: arrayOrEmpty(d.certificates),
-              }
-            : null
+      try {
+        resolvedProfile = await profileAPI.getProfile();
+        if (mounted) {
+          setProfile(resolvedProfile);
+        }
+      } catch {
+        if (mounted) {
+          setProfile(null);
+        }
+      }
+
+      try {
+        const scored = await opportunitiesAPI.listScored(
+          { limit: 50 },
+          resolvedProfile?.user_id
         );
-      })
-      .catch(() => {});
+        if (mounted) {
+          setOpportunities(scored.data);
+        }
+      } catch {
+        try {
+          const fallback = await opportunitiesAPI.list({ limit: 50 });
+          if (mounted) {
+            setOpportunities(fallback.data);
+          }
+        } catch {}
+      }
+    };
+
+    void fetchProfileAndOpportunities();
 
     competitionsAPI
       .list({ limit: 500 })
@@ -76,7 +89,9 @@ export default function PlanetClient() {
   );
 
   const radarData = useMemo(
-    () => profile ? buildRadarData(profile.skills, profile.certificates, allTags) : null,
+    () => profile
+      ? buildRadarData(arrayOrEmpty(profile.skills), arrayOrEmpty(profile.certificates), allTags)
+      : null,
     [profile, allTags]
   );
 
